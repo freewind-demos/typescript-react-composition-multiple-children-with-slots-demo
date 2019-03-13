@@ -1,5 +1,5 @@
-TypeScript React Composition "props.children" Demo
-==================================================
+TypeScript React Composition Multiple Children with Slots Demo
+==============================================================
 
 ```
 npm install

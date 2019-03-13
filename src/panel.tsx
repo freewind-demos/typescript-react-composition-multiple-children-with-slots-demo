@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
-class Panel extends React.Component {
-  constructor(props: any) {
+type Props = {
+  header: ReactNode,
+  body: ReactNode
+}
+
+class Panel extends React.Component<Props, any> {
+  constructor(props: Props) {
     super(props)
   }
 
   render() {
     return <div style={{border: '3px solid red'}}>
-      {this.props.children}
+      <div style={{backgroundColor: '#DDDDDD'}}>{this.props.header}</div>
+      <div style={{padding: '10px'}}>{this.props.body}</div>
     </div>
   }
 }
